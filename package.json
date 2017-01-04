@@ -1,6 +1,6 @@
 {
   "name": "react-advanced-img",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Img with fallback to placeholder on image load error",
   "main": "dist/ReactAdvancedImg.js",
   "scripts": {
@@ -14,13 +14,13 @@
   "keywords": [
     "react",
     "webpack",
-    "hmr",
-    "hot",
-    "reload",
-    "ava",
-    "nyc",
-    "istabul",
-    "boilerplate"
+    "images",
+    "photo",
+    "picture",
+    "img",
+    "placeholder",
+    "fallback",
+    "image"
   ],
   "author": "p0o",
   "license": "MIT",
