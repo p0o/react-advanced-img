@@ -6,6 +6,8 @@ export default class ReactAdvancedImg extends Component {
     placeholder: PropTypes.string,
     style: PropTypes.object,
     className: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number,
   };
 
   static defaultProps = {
@@ -13,7 +15,7 @@ export default class ReactAdvancedImg extends Component {
     className: '',
     placeholder: 'placeholder',
     width: 500,
-    height: 500
+    height: 500,
   };
 
   constructor(props) {
@@ -33,6 +35,8 @@ export default class ReactAdvancedImg extends Component {
       const placeholderUrl = `https://dummyimage.com/${width}x${height}/d1cfd1/fff&text=${placeholder}`;
       return (
         <img
+          style={this.props.style}
+          className={this.props.className}
           src={placeholderUrl}
         />
       );
@@ -40,6 +44,8 @@ export default class ReactAdvancedImg extends Component {
 
     return (
       <img
+        style={this.props.style}
+        className={this.props.className}
         src={this.props.src}
         onError={this.handleError}
       />
