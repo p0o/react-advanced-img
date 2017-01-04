@@ -2,7 +2,7 @@
   "name": "react-advanced-img",
   "version": "0.1.0",
   "description": "Img with fallback to placeholder on image load error",
-  "main": "src/ReactAdvancedImg.js",
+  "main": "dist/ReactAdvancedImg.js",
   "scripts": {
     "test": "ava ./test",
     "test:watch": "ava --watch ./test",
