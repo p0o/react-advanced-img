@@ -7,7 +7,7 @@
     "test": "ava ./test",
     "test:watch": "ava --watch ./test",
     "coverage": "cross-env NODE_ENV=test nyc npm test",
-    "build": "cross-env NODE_ENV=production webpack -p",
+    "build": "mkdir -p ./dist && cp -r ./src/* ./dist/ && babel ./src --out-dir ./dist",
     "build:dev": "cross-env NODE_ENV=development webpack -d",
     "server": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot"
   },
@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-istanbul": "^2.0.3",
