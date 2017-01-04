@@ -5,7 +5,13 @@
 This library works as a substitute for your `<img>` tag. The only difference is you can send a placeholder
 text and the library will generate an image with that text using `dummyimage.com`
 
-I created this component for (busy.org)[https://github.com/adcpm/busy] app. It's open source, take a look!
+I created this component for [busy.org](https://github.com/adcpm/busy) app. It's open source, take a look!
+
+## Install
+
+```
+npm i react-advanced-img --save
+```
 
 ## Example
 
